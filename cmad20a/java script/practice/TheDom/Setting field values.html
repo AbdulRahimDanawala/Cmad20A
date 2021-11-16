@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function autoSelect(){
+            var Student = ["uzair ", "zeeshan ", "A.rahim ", "hadiya ", "ariba ", "mam naseema"]
+            var name = document.getElementById('UserName').value
+            var ug ;
+            // var male = "Male"
+            // var female = "FeMale"
+            switch(name){
+                case "uzair":
+                case "zeeshan":
+                case "A.rahim":
+                document.getElementById('gender').value = "Male"
+                break;
+                case "hadiya":
+                case "ariba":
+                case "mam naseema":
+                document.getElementById('gender').value = "FeMale"
+                break;
+                default:{
+                    alert("Please Enter Name This Student List " + Student)
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+    UserName:<br>
+    <input type="text" id="UserName" onblur="autoSelect()"/><br>
+    
+    <label>UserGender: <input type="text" id="gender"></label>
+    
+
+    
+</body>
+</html>

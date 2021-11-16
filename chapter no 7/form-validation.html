@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Form validation</title>
+    </head>
+    <body>
+        
+        <form>
+            <label>Searchsaved users <input type="search" /></label>
+            <table cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td><label for="first name">First name</label></td>
+                        <td><input type="text" id="first name" required minlength="5" maxlength="10" autocomplete="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last name">Last name</label></td>
+                        <td><input type="text" id="last name" required minlength="6" maxlength="10" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="portfolio">portfolio</label></td>
+                        <td><input type="url" id="portfolio" required placeholder="Not a compulsory feild" /></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                        <button>Save Information</button> 
+                    </th>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </form>
+
+    </body>
+</html>

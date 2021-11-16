@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        #firstDiv{
+            font-size: 70px;
+            font-family: cursive;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="firstDiv"><span id="data"> name: "Rahim" <br> class: "12", <br> fee: "5000",</span></div>
+    <button onclick="studentAnnual.calcAnnual()">calculationAnnaulFee</button>
+    <script>
+        var studentAnnual = {
+            name: "Rahim",
+            class: "12",
+            fee: "5000",
+            calcAnnual: function(){
+                var moFee = this.fee;
+                var annual = 12;
+                var annualFee = moFee*annual
+                var div1 = document.getElementById("firstDiv");
+                var newHeading = document.createElement("h1");
+                var textNode = document.createTextNode("Annual Fees :- " + annualFee)
+                newHeading.appendChild(textNode);
+                div1.appendChild(newHeading)
+              
+            
+            
+            
+            
+            }
+        }
+
+    </script>
+</body>
+
+</html>

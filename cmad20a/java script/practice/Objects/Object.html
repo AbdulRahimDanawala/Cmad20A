@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        var studentData = {
+            name: "A.rahim",
+            class: "CMAD20A",
+            age: 22,
+            fees: "6500",
+            courseValidity: "1year"
+        }
+        studentData.fatheName = "A.razzak"
+        console.log(studentData)
+
+        delete studentData.age
+        console.log(studentData)
+        var check = "age" in studentData
+
+        console.log(studentData)
+        console.log(check)
+
+    </script>
+
+</body>
+
+</html>

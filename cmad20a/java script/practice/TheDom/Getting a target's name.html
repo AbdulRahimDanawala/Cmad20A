@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>nodeName</title>
+</head>
+
+<body>
+    <div>
+        <h1>THIS A FIRST DIV</h1>
+        <p>The First Para in First Div</p>
+        <p>The Second Para in First Div</p>
+        <p>The third Para in First Div</p>
+        <p>The Fourth Para in First Div</p>
+    </div>
+    <div id="div2">
+        <h1>THIS <em>IS A SECOND DIV</em></h1>
+        <p>The First Para in Second Div</p>
+        <p>The Second Para in Second Div</p>
+        <p>The Third Para in Second Div</p>
+        <p>The Fourth Para in Second Div</p>
+    </div>
+    <script>
+        var div2 = document.getElementById('div2');
+        console.log(div2.lastChild.previousSibling.parentNode.nodeName)
+        console.log(div2.childNodes[1].nodeValue)
+    </script>
+</body>
+
+</html>

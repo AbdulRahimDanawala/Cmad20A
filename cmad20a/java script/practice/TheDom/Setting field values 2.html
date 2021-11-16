@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var students = ["uzair", "rahim", "arfeen", "israr", "zeeshan", 
+                        "hadiya", "ariba", "mam naseema", "iqra", "fatime"]
+        var sg = ["male", "male", "male", "male", "male", "female", "female", "female", "female", "female", ]
+             function   autoSelect(){
+                 var enteredUser = document.getElementById('UserName').value;
+                 var studentIndex = students.indexOf(enteredUser);
+                 if(studentIndex !== -1){
+                    document.getElementById('gender').value = sg[studentIndex]
+                 }else{
+                     document.getElementById('gender').value = unselected
+                 } 
+             }   
+    </script>
+</head>
+
+<body>
+    <label> UserName:<br>
+        <input type="text" id="UserName" onblur="autoSelect()" /><br>
+    </label>
+    <label>
+        Gender:<br>
+        <select id="gender">
+            <option  disabled selected>Please Select Gender</option>
+            <option value="unselected">UnSelected</option>
+            <option value="male">Male</option>
+            <option value="female">FeMale</option>
+        </select>
+    </label>
+
+
+
+</body>
+
+</html>

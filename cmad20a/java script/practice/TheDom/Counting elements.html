@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="uOr">
+        <li>Pakistan</li>
+        <li>China</li>
+        <li>India</li>
+        <li>Afghanistan</li>
+        <li>America</li>
+        <li>Switzerland</li>
+    </ul>
+    <script>
+        var liItems = document.getElementsByTagName('li')
+        console.log(liItems)
+        for (var i = 0; i < liItems.length; i++) {
+            if (liItems[i]) {
+                liItems[i].innerHTML = liItems[i].innerHTML.toUpperCase()
+                console.log(liItems[i])
+            }
+        }
+    </script>
+</body>
+
+</html>

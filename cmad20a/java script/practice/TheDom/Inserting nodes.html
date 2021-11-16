@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div1">
+        <h1 id="h1">I am First Heading</h1>
+        <h1 id="h3">I am Third Heading</h1>        
+    </div>
+</body>
+<script>
+    var div = document.getElementById("div1")
+    var thirdHead = document.getElementById("h3")
+    var heading = document.createElement("h1")
+    var text = document.createTextNode("I am Second Heading")
+    heading.appendChild(text)
+    console.log(heading)
+    div.insertBefore(heading, thirdHead)
+</script>
+</html>

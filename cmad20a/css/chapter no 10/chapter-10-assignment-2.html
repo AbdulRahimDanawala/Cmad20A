@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            div{
+                background-color: grey;
+                margin: 0px 60px 0px 60px;
+            }
+            .green{
+                background-color: rgba(12, 129, 12, 0.911);
+                color: white;
+            }
+            .input{
+                margin-left: 30px;
+            }
+            .height-widht{
+                max-width: 100px;
+                max-height: 100px;
+                overflow: scroll;
+                background-color: white;
+                margin-left: 80px;
+               
+            }
+            .magazine{
+                margin-top: 30px;
+            }
+            .file{
+                background-color: white;
+            }
+            .margin-1{
+                margin-left: 185px;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div>
+        <form>
+            <h1 class="green">User Registration Form</h1>
+            <label for="user">Username:</label>
+            <input type="text" name="username" id="user" class="input"/>
+            <br />
+            <br />
+            <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass" class="input"/>
+            <br />
+            <br />
+            <label for="DB">Date Of Birth:</label>
+            <input type="date" name="DateOfBirth" id="DB" class="input"/>
+            <br />
+            <br />
+            <label for="URL">Web URL:</label>
+            <input type="url" name="url" id="URL" class="input"/>
+            <br />
+            <br />
+            <label for="Address">Address:</label>
+            <input type="text" name="Address" id="Address" class="input"/>
+            <br />
+            <br />
+            <label for="city">City:</label>
+            <select name="city" id="city" class="input">
+                <option value="Karachi" selected>Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Multan">Multan</option>
+            </select>
+            <br />
+            <br />
+            <label for="state">State:</label>
+            <input type="text" name="state" class="input">
+            <br />
+            <br />
+            <label for="Zip">Zip:</label>
+            <input type="text" name="Zip" class="input">
+            <br />
+            <p class="magazine">Magazine:</p><div class="height-widht">Newssweek<br />Time<br />Fortune<br />Tv Guide</div>
+            <br />
+            <br />
+            <label for="cmnt">Additional Comments:</label><br >
+            <textarea name="comment" id="cmnt" cols="50" rows="8"></textarea>
+            <br />
+            <label for="file">Upload your profile picture:</label>
+            <input type="file" name="file" id="file" class="file"><br />
+            <button class="green margin-1">upload</button><br />
+            <button class="green">Send your order</button>
+            
+        </form>
+    </div>
+    </body>
+</html>

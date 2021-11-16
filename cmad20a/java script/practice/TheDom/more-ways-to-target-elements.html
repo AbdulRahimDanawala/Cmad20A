@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>more-ways-to-target-elements</title>
+   
+</head>
+
+<body>
+    <div>
+        <h1>THIS A FIRST DIV</h1>
+        <p>The First Para in First Div</p>
+        <p>The Second Para in First Div</p>
+        <p>The third Para in First Div</p>
+        <p>The Fourth Para in First Div</p>
+    </div>
+    <div id="div2">
+        <h1>THIS IS A SECOND DIV</h1>
+        <p>The First Para in Second Div</p>
+        <p>The Second Para in Second Div</p>
+        <p>The Third Para in Second Div</p>
+        <p>The Fourth Para in Second Div</p>
+
+    </div>
+
+
+    <script>
+        console.log(document.childNodes[1].childNodes[2].childNodes[1].firstChild.nextSibling)
+        console.log(document.childNodes[1].childNodes[2].childNodes[1].lastChild.previousSibling)
+        console.log(document.childNodes[1].childNodes[2].childNodes[1].parentNode)
+    </script>
+</body>
+
+</html>

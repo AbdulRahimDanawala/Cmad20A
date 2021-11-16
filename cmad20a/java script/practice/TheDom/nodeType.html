@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Node-Type</title>
+   
+</head>
+
+<body>
+    <div>
+        <h1>THIS A FIRST DIV</h1>
+        <p>The First Para in First Div</p>
+        <p>The Second Para in First Div</p>
+        <p>The third Para in First Div</p>
+        <p>The Fourth Para in First Div</p>
+    </div>
+    <div id="div2">
+        <h1>THIS IS A SECOND DIV</h1>
+        <p>The First Para in Second Div</p>
+        <p>The Second Para in Second Div</p>
+        <p>The Third Para in Second Div</p>
+        <p>The Fourth Para in Second Div</p>
+
+    </div>
+
+
+    <script>
+        console.log(document.childNodes[1].childNodes[2].childNodes[0].nodeType)
+    </script>
+</body>
+
+</html>

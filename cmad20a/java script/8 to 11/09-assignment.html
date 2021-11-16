@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var marks_obtained = Number(prompt("Please Enter Your Marks"));
+        var total_marks = 300
+        var percentage = marks_obtained*100;
+        var u_percentage = percentage/total_marks
+        if(u_percentage >= 80){
+            document.write("<h2>MARK SHEET</h2>" + "<br>" + "Total Marks: " + total_marks + "<br>" + "<br>" +
+            "Marks Obtained: " + marks_obtained + "<br>" + "<br>" + "Percentage: " + u_percentage + "<br>" + "<br>" + "Grade: A-One" + "<br>" + "<br>" + "Remarks: Excellent")
+
+        }else if(u_percentage >= 70){
+            document.write("<h2>MARK SHEET</h2>" + "<br>" + "Total Marks: " + total_marks + "<br>" + "<br>" +
+            "Marks Obtained: " + marks_obtained + "<br>" + "<br>" + "Percentage: " + u_percentage + "<br>" + "<br>" + "Grade: A" + "<br>" + "<br>" + "Remarks: Good")
+
+        }else if(u_percentage >= 60){
+            document.write("<h2>MARK SHEET</h2>" + "<br>" + "Total Marks: " + total_marks + "<br>" + "<br>" +
+            "Marks Obtained: " + marks_obtained + "<br>" + "<br>" + "Percentage: " + u_percentage + "<br>" + "<br>" + "Grade: B" + "<br>" + "<br>" + "Remarks: You need to improve")
+
+        }else if(u_percentage < 60){
+            document.write("<h2>MARK SHEET</h2>" + "<br>" + "Total Marks: " + total_marks + "<br>" + "<br>" +
+            "Marks Obtained: " + marks_obtained + "<br>" + "<br>" + "Percentage: " + u_percentage + "<br>" + "<br>" + "Grade: Fail" + "<br>" + "<br>" + "Remarks: Sorry")
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checking-Property-And-Methods</title>
+
+</head>
+
+<body>
+    <table id="parent" border="1">
+        <tr id="firstRow">
+            <th>listOfProperties</th>
+        </tr>
+    </table>
+    <script>
+        function Plan(name, price, space, transfer, pages, discountMonths) {
+            this.name = name;
+            this.price = price;
+            this.space = space;
+            this.transfer = transfer;
+            this.pages = pages;
+            this.discountMonths = discountMonths;
+            this.calcAnnual = function (percentIfDisc) {
+                var bestPrice = this.price;
+                var currDate = new Date();
+                var thisMo = currDate.getMonth();
+                for (var i = 0; i < this.discountMonths.length; i++) {
+                    if (this.discountMonths[i] === thisMo) {
+                        bestPrice = this.price * percentIfDisc;
+                        break;
+                    }
+                }
+                return bestPrice * 12;
+            }
+        }
+        var p1 = new Plan("Basic", 3.99, 100, 1000, 10, [6, 11]);
+        var p2 = new Plan("Premium", 5.99, 500, 5000, 50, [6, 7, 11]);
+        var p3 = new Plan("Ultimate", 9.99, 2000, 20000, 500, [6, 7])
+        console.log(p1)
+        console.log(p2)
+        console.log(p3)
+        console.log("price" in p1)//true
+        console.log("name" in p2)//true
+        console.log("abc" in p3)//false
+
+
+
+        var listOfProperties = [];
+        for (var prop in p1) {
+            listOfProperties.push(prop);
+        }
+
+
+        var parent = document.getElementById("parent")
+
+        for (var i = 0; i <= listOfProperties.length - 1; i++) {
+            var tableRows = document.createElement("tr")
+            var table = document.createElement("td");
+            var tableText = document.createTextNode(listOfProperties[i])
+            parent.appendChild(tableRows) 
+            tableRows.appendChild(table)
+            table.appendChild(tableText)
+
+        }
+       
+
+    </script>
+</body>
+
+</html>

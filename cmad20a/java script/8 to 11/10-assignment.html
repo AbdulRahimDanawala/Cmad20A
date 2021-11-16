@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        var quantity_t_shirt = Number(prompt("One T-shirt Price is 1000 \nHow many T-shirts do you need"))
+        var t_shirt_price = 1000;
+        var quantity_USB = Number(prompt("One USB Price is 700 \nHow many USB do you need"));
+        var USB_Price = 700;
+        var Shipping_charges = 250
+        var t_shirt = quantity_t_shirt * t_shirt_price;
+        var USB = quantity_USB * USB_Price;
+        var t_shirt_USB = t_shirt + USB + Shipping_charges;
+        var discounted = (t_shirt_USB/100) * 90
+        if(t_shirt_USB >= 2000){
+            document.write("<h2>Shopping Cart</h2> <br>"
+            + "Price of T-shirt is " + t_shirt_price + "<br>"
+            + "Quantity of T-shirt is " + quantity_t_shirt + "<br>"
+            + "Price of USB Flash Drive is " + USB_Price + "<br>"
+            + "Quantity of USB Flash Drive is " + quantity_USB +"<br>"
+            + "Shipping Charges " + Shipping_charges + "<br>"
+            + "Total cost of your order is " + t_shirt_USB +" PKR<br>"
+            + "Discounted Price is " + discounted + " PKR")
+
+        }else(
+            document.write("<h2>Shopping Cart</h2> <br>"
+            + "Price of T-shirt is " + t_shirt_price + "<br>"
+            + "Quantity of T-shirt is " + quantity_t_shirt + "<br>"
+            + "Price of USB Flash Drive is " + USB_Price + "<br>"
+            + "Quantity of USB Flash Drive is " + quantity_USB +"<br>"
+            + "Shipping Charges " + Shipping_charges + "<br>"
+            + "Total cost of your order is " + t_shirt_USB +" PKR<br>"
+        )
+        )
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

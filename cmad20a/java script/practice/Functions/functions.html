@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+
+    <script>
+        function telltime() {
+            var now = new Date()
+            var hours = now.getHours()
+            var mins = now.getMinutes()
+            console.log("current time is " + hours + " " + mins)
+        }
+        telltime()
+
+        // function argument
+        function userName(user) {
+            console.log("welcome", user)
+        }
+        userName("rahim")
+
+
+
+        // function return
+        function userName() {
+            var firstName = "rahim"
+            var lastName = "romi"
+            return [firstName, lastName]
+        }
+        console.log("hello " + userName()[0])
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

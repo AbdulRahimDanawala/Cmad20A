@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkaddress(){
+            var emailField = document.getElementById('email').value
+          
+            if (emailField === ""){
+                alert("This field is required")
+                
+            }else if(emailField !== ""){
+                alert("user email is " + emailField)
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <form onsubmit="checkaddress()">
+        Email:
+        <input type="text" id="email"/>
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

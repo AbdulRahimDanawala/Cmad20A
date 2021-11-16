@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math - assignment</title>
+    <script>
+        var sampleColors = ["red", "green", "blue", "black"];
+        var randomNumber = Math.floor (Math.random() * 4 );
+        console.log(randomNumber)
+        console.log(sampleColors[randomNumber])
+        var userColor = prompt("Please Enter Any Color");
+            if(userColor){
+               userColor = userColor.toLowerCase()
+               if(sampleColors[randomNumber] === userColor){
+                   alert("bingo! your answer is correct")
+               }else{
+                   alert("wrong answer \n correct answer is " + sampleColors[randomNumber])
+               }
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var flag = false;
+        var shortPara = "Slow lorises are a group of several species of strepsirrhine primates which make up the genus"
+            + "Nycticebus."
+        function expandPara() {
+            if (!flag) {
+                flag = true;
+                var expandpara = "Slow lorises are a group of several species of trepsirrhine primates which" +
+                    "make up the genus Nycticebus.They have a round head, narrow snout, large eyes, and a variety of" +
+                    "distinctive coloration patterns that are species - dependent.The hands and feet of slow lorises have several" +
+                    "adaptations that give them a pincer - like grip and enable them to grasp branches for long periods of time." +
+                    "Slow lorises have a toxic bite, a rare trait among mammals.";
+                document.getElementById('mypara').innerHTML = expandpara
+                document.getElementById('link').innerHTML = "Click Less"
+            } else {
+                flag = false;
+                document.getElementById('mypara').innerHTML = shortPara;
+                document.getElementById('link').innerHTML = "Click More"
+
+            }
+
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <p id="mypara">Slow lorises are a group of several species of strepsirrhine primates which make up the genus
+        Nycticebus.
+    </p>
+    <a href="javascript:void(0)" id="link" onClick="expandPara()">Click More</a>
+
+
+</body>
+
+</html>

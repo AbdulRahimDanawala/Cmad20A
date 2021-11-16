@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            body{
+                background-color:rgba(182, 95, 233, 0.418);
+            }
+            .text-indent{
+                text-indent: 2px;
+            }
+            table{
+                width: 50%;
+                border: 2px solid black;
+            }
+            .star{
+                list-style-image: url(star.png);
+            }
+            .plus{
+                list-style-image: url(icon-plus.png);
+                margin-left: 10px;
+            }
+             td{
+                background-color: rgb(175, 245, 250);
+            }
+            th, td{
+                text-align: center;
+            } 
+            th{
+                background-color: rgb(135, 218, 243);
+            }
+            .button{
+                background-color: green;
+                margin-left: 70px;
+            }
+            .name{
+                background-image: url(icon-plus.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                padding-left: 20px;
+                background-size: 18px;
+                text-decoration: underline;
+
+            }
+            .email{
+                background-image: url(email.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                padding-left: 20px;
+                background-size: 18px;
+                text-decoration: underline;
+
+            }
+           .div{
+               border: 1px solid black;
+                margin: 50px 80px 50px 80px;
+                background-color: khaki;
+           }
+           .margin{
+                   margin: 5px 0px 5px 5px;
+           }
+           .fieldset{
+               width: 50%;
+               margin-left: 70px;
+           }
+
+
+
+        </style>
+    </head>
+    <div class="div">
+    <body class="text-indent">
+        <h2>Available Phones At ABC Store</h2>
+            <li class="plus">Apple</li>
+        <ul class="star">
+            <li>iphone4</li>
+            <li>iphone4s</li>
+            <li>iphone5</li>
+            <li>iphone5s</li>
+            <li>iphone6</li>
+            <li>iphone6plus</li>
+        </ul>
+        <li class="plus">Samsung</li>
+        <ul class="star">
+            <li>Galaxys4</li>
+            <li>Galaxys5</li>
+            <li>GalaxyNote3</li>
+            <li>GalaxyNote4</li>
+        </ul>
+        <li class="plus">Huawei</li>
+        <ul class="star">
+            <li>Honor4x</li>
+            <li>Honor6</li>
+            <li>AscendY550</li>
+            <li>AscendQ700</li>
+        </ul>
+        <hr />
+        <table>
+        <h2>Skills Develpoment Workshop</h2>
+        <p>We Will Conduct Skills Development Workshop every tuesday</p>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12am</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td colspan="2">Goegraphy</td>
+                <!-- <td></td> -->
+                <td>Math</td>
+                <td>Art</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="3">Skill Development Workshop</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td>HomeEc</td>
+            </tr>
+        </table>
+        <hr />
+        <table>
+            <h2>Program Schedule</h2>
+            <tr>
+                <th></th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </tr>
+            <tr>
+                <td>6pm-7pm</td>
+                <td rowspan="2">Movie</td>
+                <td>Comedy</td>
+                <td>News</td>
+            </tr>
+            <tr>
+                <td>7pm-8pm</td>
+                <!-- <td></td> -->
+                <td>Sport</td>
+                <td>Current Affairs</td>
+            </tr>
+        </table>
+        <hr />
+        <form>
+            <fieldset class="fieldset">
+                <legend>
+                    Subscribe Now
+                </legend></label>
+                <label class="padding">Your name: <input class="name margin" type="text" name="Username" required>
+                <br />
+                <label>Your Email: <input class="email margin" type="email" name="email" required></label>
+                <br />
+                <label for="dropdown">Country: </label>
+                <select id="dropdown" class="margin">
+                    <option value="Pakistan" selected>Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                </select>
+                <br />
+                <p>Are you member:</p>
+                <label for="yes">Yes</label>
+                <input id="yes" type="radio" name="member">
+                <label for="no">NO</label>
+                <input id="no" type="radio" name="member">
+            </fieldset>
+            <button class="button">Subscribe</button>
+        </form>
+    </div>
+    </body>
+</html>

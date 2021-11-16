@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            font demo
+        </title>
+        <style>
+        
+                @font-face {
+                    font-family:my-font;
+                    src: url("./Anton/Anton-Regular.ttf");
+                }
+                @font-face {
+                    src: <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Satisfy&display=swap" rel="stylesheet">;
+                    font-family: 'Satisfy', cursive;
+                    font-family: 'Bungee Shade', cursive;
+                }
+            h1{
+                font-family: 'Satisfy', cursive;
+                background-color:lightgray;
+                color: lightskyblue;
+            }
+            *{
+                 font-family:'Bungee Shade', cursive ;
+                 color: darkblue;
+            }
+            .bold{
+                font-weight:bold;
+                font-style:italic;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .uppercase{
+                text-transform: uppercase;
+            }
+            .lowercase{
+            text-transform: lowercase;
+            }
+            .capitalize{
+                text-transform: capitalize;
+            }
+            .underline{
+                text-decoration: underline;
+            }
+            .overline{
+                text-decoration: overline;
+            }
+            .linethrough{
+                text-decoration: line-through;
+            }
+            .lineheight{
+                line-height: 100px;
+            }
+            .lineweight{
+                line-height: 100px;
+            }
+            .letterspacing{
+                letter-spacing: 5px;
+            }
+            .wordspacing{
+                word-spacing: 7px;
+            }
+            .textalign{
+                text-align: right;
+            }
+            img{
+                vertical-align:middle ;
+            }
+            .text-indent{
+                text-indent: 50px;
+            }
+            body{
+                text-indent: 32px;
+                background-color: khaki ;
+                background-image: url(assignment.jpg);
+                background-position-y: 60px;
+                background-repeat:no-repeat;
+                background-position-x: 100%;
+            }
+            .textshadow{
+                background-color: rgb(102, 255, 0);
+                text-shadow: 4px 3px 3px;
+            }
+            .first-line::first-line{
+                font-size: 20px;
+            }
+            .border{
+                border-style: dotted;
+            }
+            .first-letter::first-letter{
+                font-weight: bold;
+            }
+            a:link,.link{
+                color: blue;
+            }
+            a:visited,.visited{
+                    color: chartreuse;
+            }
+            .hover:hover{
+                background-color: crimson;
+                border:3px;
+                border-color: rgb(89, 139, 55);
+                border-style: double;
+                text-decoration: line-through;
+            }
+            .active:active{
+                    background-color:red;
+                    text-decoration: overline;
+                    color: greenyellow;
+            }
+            .focus:focus{
+                background-color: silver;
+                color:tomato;
+                text-decoration: underline;
+                border: 5px;
+                border-style:groove;
+                border-color: hotpink;
+            }
+
+            </style>
+    <body>
+        <h1>This is a sample heading1 element</h1>
+        <h3>This is a sample heading2 element</h3>
+        <p>This is a sample PARAGRAPH element</p>
+                    <!--bold-->
+        <div>This is a <span class="bold">bold</span> element</div>
+                     <!--font style-->
+        <p class="italic">This is a italic</p>
+                         <!--UPPERCASE & LOWERCASDE-->
+        <p class="uppercase">This is a uppercase example</p>
+        <p class="lowercase">THIS IS A LOWERCASE EXAMPLE</p>
+        <p class="capitalize">this is a capitalize example</p>
+                <!--underline&strike-->
+        <p class="underline">This is a Underline</p>
+        <p class="overline">This is a overline</p>
+        <p class="linethrough">This is a linethrough</p>
+                    <!--line height-->
+        <p class="lineheight">This is a line height</p>
+        <hr color="green "/> 
+                    <!--line weight-->
+        <p class="lineweight">this is line weight</p>
+                    <!--letter spacing & word spacing-->
+        <p class="letterspacing">This is a letter spacing</p>
+        <p class="wordspacing">this is a word spacing</p>
+                        <!--text-align-->
+        <p class="textalign">Created by Rahim Romi</p>
+                    <!--vertical-align-->
+        <img src="desert.jpg" alt="desert" width="450px" height="600px" />THis is desert
+                        <!--text indent-->
+        <p class="text-indent">THIS IS A TEXT INDENT</p>
+                            <!--text shadow-->    
+        <p class="textshadow">This is a shadow </p>
+                        <!--first letter & first line-->
+        <div class="border">
+            <p class="first-line">This is a first line Example<br />
+                This is a first line Example<br />
+                This is a first line Example<br />
+                This is a first line Example<br />
+                This is a first line Example<br />
+            </p>
+        </div>
+        <p class="first-letter">This is a first letter Example</p>
+                    <!--styling links-->
+                    <!--link & visited-->
+        <a class="link visited" href="https://laibagarments5.wix.com/home"/> Laiba Garments</a><br />
+                    <!--styling links-->
+                    <!--:hover-->
+       <input class="hover" type="text" name="username"/>
+        <button class="hover">submit</button>
+                     <!--styling links-->
+                    <!--:active-->
+                    Username:
+        <input class="active" type="text" name="username"/>
+        <input class="active" type="submit"/>
+                    <!--styling links-->
+                    <!--:focus-->
+                    Password:
+        <input class="focus" type="text" name="password"/>
+        <input class="focus" type="submit"/>
+    </body>
+</html>

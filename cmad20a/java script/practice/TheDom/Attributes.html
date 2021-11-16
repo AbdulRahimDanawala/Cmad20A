@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="image01" alt="" src="https://images.unsplash.com/photo-1605756079382-769b24f0509c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60" >
+    <br>
+    <label>UserName:<input type="text" id="userName" onblur="autocheck()"></label><br><br>
+    Gender <br>
+    <label>Male: <input id="male" type="radio" value="male" /></label>
+    <label>FeMale: <input id="female" type="radio" value="female" /></label>
+    <script>
+        function autocheck() {
+            var userName = document.getElementById("userName").value;
+            var male = document.getElementById("male")
+            var female = document.getElementById("female")
+            switch (userName) {
+                case "arfeen":
+                case "uzair":
+                male.setAttribute("checked", "checked")
+        }
+        }
+
+        var image = document.getElementById("image01")
+        console.log(image.hasAttribute("width"))
+        console.log(image.getAttribute("id"))
+        image.setAttribute("width", "500")
+        image.setAttribute("height", "500")
+        console.log(image.hasAttribute("width"))
+        console.log(image.attributes)
+
+    </script>
+</body>
+
+</html>

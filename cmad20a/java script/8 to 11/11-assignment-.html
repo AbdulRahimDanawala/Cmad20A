@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Taskss 11 to 20</title>
+    <script>
+
+        var special_number = 6;
+        var guess_number = Number(prompt("Guess the special number"));
+        document.write("<h2> Gussing game </h2>");
+        document.write("<br>");
+        if (special_number === guess_number) {
+            document.write("Bingo correct");
+            document.write("<br> <hr>");
+        } else if (guess_number > 0 && guess_number < 10) {
+            document.write("Wrong ans but you are very close");
+            document.write("<br> <hr>");
+        } else if (guess_number >= 10) {
+            document.write("Wrong ans please guess between 1 to 10");
+            document.write("<br> <hr>");
+        } else if (guess_number <= 0) {
+            document.write("Negative integer is not allowd");
+            document.write("<br> <hr>");
+        } else {
+            document.write("You skip the game hope you come again");
+            document.write("<br> <hr>");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

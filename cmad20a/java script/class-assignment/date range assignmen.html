@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var range = prompt("Please Enter Your Range");
+        var startDate = new Date();
+        var enddate = new Date()
+        enddate.setHours(23);
+        enddate.setMinutes(59);
+        enddate.setSeconds(59);
+
+        if (range === "d") {
+            console.log("selected range " + range + " start date is " + startDate + "\n end date is " + enddate)
+        } else if (range === "m") {
+            startDate.setDate(1);
+            console.log("selected range " + range + " startDate is " + startDate + "\n end date is " + enddate);
+
+        } else if (range === "y") {
+            startDate.setMonth(0);
+            startDate.setDate(01)
+            startDate.setFullYear(2020)
+            startDate.setHours(00)
+            startDate.setMinutes(00)
+            startDate.setSeconds(00)
+            console.log("selected range " + range + " start date is " + startDate + "\n end date is " + enddate)
+        }
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
